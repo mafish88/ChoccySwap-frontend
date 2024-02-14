@@ -107,7 +107,7 @@
       />
     </svg>
     <p class="subtitle text-pink text-[16pt] flex justify-center relative top-[-5rem]">
-      The first Dex on Chromia
+      The first DEX on Chromia
     </p>
 </div>
 
