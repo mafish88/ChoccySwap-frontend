@@ -1,5 +1,6 @@
 <script>
 	import Animation from "$lib/components/complex/animation.svelte";
+	import Features from "$lib/components/sections/features.svelte";
 	import Swap from "$lib/components/sections/swap.svelte";
 	import ValueProp from "$lib/components/sections/valueprop.svelte";
 </script>
@@ -12,7 +13,8 @@
 <section>
 	<Animation class=""/>
 	<Swap/>
-	<ValueProp/>
+	<!--ValueProp/-->
+	<Features />
 </section>
 
 <style>

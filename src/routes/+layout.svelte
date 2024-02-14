@@ -19,9 +19,11 @@
 	<Header marginTop={warningHeight}/>
 	<Navpill />
 
-	<main class="mb-[10rem] bg-transparent">
+	<main class="mb-20 bg-transparent">
 		<slot />
 	</main>
+
+	<footer class="bg-gray h-10 mt-auto"></footer>
 </div>
 
 <style>
