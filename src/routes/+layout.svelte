@@ -6,6 +6,7 @@
 	import Navpill from '$lib/components/complex/navpill.svelte';
 	
 	let closedWarning = false;
+	let warningHeight = "";
 	
 	export const snapshot: Snapshot<boolean> = {
 		capture: () => closedWarning,
@@ -14,10 +15,8 @@
 </script>
 
 <div class="bg-gray min-h-screen flex flex-col app">
-	<div class="sticky top-0 z-[200] w-full">
-		<Domainwarn closed={closedWarning}/>
-		<Header />
-	</div>
+	<Domainwarn closed={closedWarning} bind:height={warningHeight}/>
+	<Header marginTop={warningHeight}/>
 	<Navpill />
 
 	<main class="mb-[10rem] bg-transparent">

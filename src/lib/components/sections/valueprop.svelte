@@ -1,26 +1,29 @@
 <script lang="ts">
+	import Mediaquery from "../atomic/mediaquery.svelte";
+
 </script>    
     
-
-<div class="flx space-x-4 my-10">
-    <h2 class="text-[16pt] text-gray-0 font-sans">
-        What makes us <span class="text-pink">special</span>?
-    </h2>
-    <div class="relative mt-1">
-        <h2 class="invisible text-[16pt] font-sans">
-            Evm compatiblee
+<Mediaquery query="(min-width:408px)" let:matches>
+    <div class="flx space-x-4 my-10" style:flex-direction={matches? "row" : "column"}>
+        <h2 class="text-[16pt] text-gray-0 font-sans">
+            What makes us <span class="text-pink">special</span>?
         </h2>
-        <h2 class="font-sans top-0 absolute roll1 text-[16pt]">
-            Zero gas fees
-        </h2>
-        <h2 class="font-sans top-0 absolute roll2 text-[16pt]">
-            FT4 Trading
-        </h2>
-        <h2 class="font-sans top-0 absolute roll3 text-[16pt]">
-            EVM compatible
-        </h2>
+        <div class="relative mt-1">
+            <h2 class="invisible text-[16pt] font-sans">
+                Evm compatiblee
+            </h2>
+            <h2 class="font-sans top-0 absolute roll1 text-[16pt]">
+                Zero gas fees
+            </h2>
+            <h2 class="font-sans top-0 absolute roll2 text-[16pt]">
+                FT4 Trading
+            </h2>
+            <h2 class="font-sans top-0 absolute roll3 text-[16pt]">
+                EVM compatible
+            </h2>
+        </div>
     </div>
-</div>
+</Mediaquery>
 
 <style>
     span {
