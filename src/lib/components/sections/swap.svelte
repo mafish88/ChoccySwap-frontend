@@ -10,22 +10,16 @@
 
 <div class="flx space-x-20">
     <div class="flx flex-col">
-        <h4 class="text-[20pt] pb-[0.5rem]">
+        <p class="text-gray-0 text-[20pt] pb-[0.5rem]">
             Try it
-        </h4>
+        </p>
         <CTA text="Go to the app!" class="py-2" href="/exchange"/>
     </div>
     <div class="flx flex-col">
-        <h4 class="text-[20pt] pb-[0.5rem]">
+        <p class="text-gray-0 text-[20pt] pb-[0.5rem]">
             Buy it
-        </h4>
+        </p>
         <CTA text="Buy on TraderJoe!" isA={false} class="py-2"
             action={buy} tooltip="Copy the token address and go to TraderJoe"/>
     </div>
 </div>
-
-<style>
-    h4 {
-        text-shadow: 0px 0px 8px #ff3fdc;
-    }
-</style>

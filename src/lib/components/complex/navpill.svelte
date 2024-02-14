@@ -10,7 +10,7 @@
 </script>
 
 
-<div class="z-[201] flx space-x-8 px-4 mx-auto mt-8 bg-gray-400 rounded-full">
+<div class="z-[201] flx space-x-8 px-4 py-1 mx-auto mt-6 bg-gray-400 rounded-full">
     <a href="stats" class="flx text-gray-100 hover:text-gray-0">
         Stats
     </a>

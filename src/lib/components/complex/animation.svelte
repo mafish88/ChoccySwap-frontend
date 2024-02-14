@@ -18,7 +18,7 @@
   </defs>
       <g id="logogroup">
       <circle
-          style="
+          style="display:none;
           fill: #222222;
           fill-opacity: 1;
           stroke: none;
@@ -106,13 +106,13 @@
       aria-label="Choccy Swap"
       />
     </svg>
-    <h2 class="text-pink text-[20pt] flex justify-center relative top-[-5rem]">
+    <p class="subtitle text-pink text-[16pt] flex justify-center relative top-[-5rem]">
       The first Dex on Chromia
-    </h2>
+    </p>
 </div>
 
 <style>
-  h2 {
+  .subtitle {
     opacity: 0;
     animation: fade-in 3s 8s forwards;
   }
@@ -257,7 +257,4 @@
   path {
     filter: drop-shadow(0px 0px 5px #ff3fdc);
   }
-  h2 {
-		font-family: 'Nickainley', sans-serif;
-	}
 </style>

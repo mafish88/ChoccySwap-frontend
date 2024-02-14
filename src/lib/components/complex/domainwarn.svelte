@@ -2,8 +2,8 @@
 	export let closed: boolean;
 </script>
 
-<header class="py-1 bg-pink-800 text-pink stroke-pink flx w-full"
-	style:display={closed? "none" : "static"}>
+<header class="py-1 z-[202] bg-pink-800 text-pink stroke-pink flx w-full"
+	style:display={closed? "none" : "relative"}>
 	Warning: make sure you're using&nbsp;
 	<a class="clickable" href="https://choccyswap.com">https://choccyswap.com</a>!
 

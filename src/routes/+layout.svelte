@@ -35,7 +35,6 @@
 			to bottom left,
 			rgb(34 34 34 / 0%),
 			#ff9ced22
-		), url("bg.png");
-		
+		), url("$lib/images/bg.png");	
 	}
 </style>
