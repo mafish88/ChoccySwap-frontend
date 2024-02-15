@@ -14,7 +14,7 @@
             <p class="text-gray-0 text-[20pt] pb-[0.5rem]">
                 Try it
             </p>
-            <CTA text="Go to the app!" class="py-2" href="/exchange"/>
+            <CTA text="Check out the app!" class="py-2" href="/exchange"/>
         </div>
         <div class="flx flex-col">
             <p class="text-gray-0 text-[20pt] pb-[0.5rem]">

@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Mediaquery from '../atomic/mediaquery.svelte';
-    import test1 from "$lib/images/test_1.png";
+    import test1 from "$lib/images/no-gasfees.png";
     import test2 from "$lib/images/test_2.png";
     import test3 from "$lib/images/test_3.png";
     import test4 from "$lib/images/test_4.png";
