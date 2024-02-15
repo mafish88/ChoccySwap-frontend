@@ -23,7 +23,7 @@
 		<slot />
 	</main>
 
-	<footer class="bg-gray h-10 mt-auto"></footer>
+	<footer class="bg-pink-800 h-10 mt-auto"></footer>
 </div>
 
 <style>
