@@ -12,13 +12,14 @@ export default {
         '500': '#f540d0',
         '600': '#d920b0',
         '700': '#b4178e',
-        '800': '#931572',
+        '800': '#931572', // warning and footer
         '900': '#78175d',
         '950': '#51013c',
-        DEFAULT: '#ff9ced',
+        'shadows': '#ff3fdc',
+        DEFAULT: '#ff9ced', // all the pink
       },
       'gray': {
-        '0': '#cccccc',
+        '0': '#cccccc', // brightest text
         '50': '#a8a8a8',
         '100': '#9c9c9c',
         '200': '#858585',
@@ -42,7 +43,7 @@ export default {
         '800': '#185472',
         '900': '#184561',
         '950': '#0a2c42',
-        DEFAULT: '#5ad2f4',
+        DEFAULT: '#5ad2f4', // only one used
       },
     },
     extend: {},

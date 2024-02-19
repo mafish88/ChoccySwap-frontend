@@ -1,8 +1,9 @@
 <script>
 	import Animation from "$lib/components/complex/animation.svelte";
 	import Features from "$lib/components/sections/features.svelte";
+	import Partners from "$lib/components/sections/partners.svelte";
+	import Roadmap from "$lib/components/sections/roadmap.svelte";
 	import Swap from "$lib/components/sections/swap.svelte";
-	import ValueProp from "$lib/components/sections/valueprop.svelte";
 </script>
 
 <svelte:head>
@@ -15,6 +16,8 @@
 	<Swap/>
 	<!--ValueProp/-->
 	<Features />
+	<Roadmap />
+	<Partners />
 </section>
 
 <style>

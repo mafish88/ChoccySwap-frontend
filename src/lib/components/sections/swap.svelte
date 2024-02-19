@@ -1,5 +1,6 @@
 <script lang="ts">
 	import CTA from '../atomic/cta.svelte';
+	import Fadingcomponent from '../atomic/fadingcomponent.svelte';
 	import Mediaquery from '../atomic/mediaquery.svelte';
 
     function buy() {
@@ -10,18 +11,22 @@
     
 <Mediaquery query="(min-width:435px)" let:matches>
     <div class="flx {matches? "space-x-20" : "space-x-4"}">
-        <div class="flx flex-col">
-            <p class="text-gray-0 text-[20pt] pb-[0.5rem]">
-                Try it
-            </p>
-            <CTA text="Check out the app!" class="py-2" href="/exchange"/>
-        </div>
-        <div class="flx flex-col">
-            <p class="text-gray-0 text-[20pt] pb-[0.5rem]">
-                Buy it
-            </p>
-            <CTA text="Buy on TraderJoe!" isA={false} class="py-2"
-                action={buy} tooltip="Copy the token address and go to TraderJoe"/>
-        </div>
+        <Fadingcomponent fadedStyle="opacity:0;transform:translate(-100px,20px)">
+            <div class="flx flex-col">
+                <p class="text-gray-0 text-[20pt] pb-[0.5rem]">
+                    Try it
+                </p>
+                <CTA text="Check out the app!" class="py-2" href="/exchange"/>
+            </div>
+        </Fadingcomponent>
+        <Fadingcomponent fadedStyle="opacity:0;transform:translate(100px,20px)">
+            <div class="flx flex-col">
+                <p class="text-gray-0 text-[20pt] pb-[0.5rem]">
+                    Buy it
+                </p>
+                <CTA text="Buy on TraderJoe!" isA={false} class="py-2"
+                    action={buy} tooltip="Copy the token address and go to TraderJoe"/>
+            </div>
+        </Fadingcomponent>
     </div>
 </Mediaquery>

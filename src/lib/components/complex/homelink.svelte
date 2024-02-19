@@ -48,7 +48,7 @@
         </g>
         </g>
     </svg>
-    <h1 class="flx pl-4 text-[20pt]" style:display={showWriting? "flex" : "none"}>ChoccySwap</h1>
+    <h1 class="flx pl-4 text-[20pt] cursive" style:display={showWriting? "flex" : "none"}>ChoccySwap</h1>
 </a>
 
 

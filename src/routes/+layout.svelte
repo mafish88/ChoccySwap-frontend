@@ -19,7 +19,7 @@
 	<Header marginTop={warningHeight}/>
 	<Navpill />
 
-	<main class="mb-20 bg-transparent">
+	<main class="mb-20 bg-transparent flx flex-col">
 		<slot />
 	</main>
 
