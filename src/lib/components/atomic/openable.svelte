@@ -9,8 +9,9 @@
 	class="{$$restProps.class} flex flex-col">
 	<div class="flex justify-between">
 		<h4 style:color={color}>{title}</h4>
-		<svg class="w-5 stroke-gray-0" viewBox="0,0,7,10">
-			<path style="fill:none;stroke-width:0.75;" class="" d="M2,4 l2,2 l2,-2" />
+		<svg class="w-5" viewBox="0,0,7,10">
+			<path style="fill:none;stroke-width:0.75;" style:stroke={color}
+				d="M2,4 l2,2 l2,-2" />
 		</svg>
 	</div>
 	<div class="wrapper">
