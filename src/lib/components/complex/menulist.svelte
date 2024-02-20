@@ -11,8 +11,9 @@
 </script>
 
 <div class="{open? "" : "closed"} absolute rounded-b
-    bg-gray-400 top-[2rem] right-0 px-6 py-1 space-y-1 flx flex-col">
-    {#each links as info}
+    bg-gray-400 top-[2rem] right-0 px-2 py-1 space-y-1 flex justify-center align-end flex-col">
+    {#each links as info, i}
+        <hr class="hr{i}"/>
         <a class="text-gray-100 hover:text-gray-0" href={info[1]}>{info[0]}</a>
     {/each}
 </div>
@@ -20,6 +21,9 @@
 <style>
     div.closed {
         opacity: 0;
+        display: none;
+    }
+    .hr0 {
         display: none;
     }
 </style>
