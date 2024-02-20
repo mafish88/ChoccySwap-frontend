@@ -9,8 +9,8 @@
     let stopped = false;
 </script>    
     
-<h3 class="text-[20pt] mb-8">Partners</h3>
-<div class="w-screen py-6 bg-gray-200" role="region"
+<h3 class="text-[20pt] mb-8 mt-[8rem]">Ecosystem</h3>
+<div class="w-screen py-6 bg-gray-300" role="region"
     on:mouseover={()=>{stopped=true}} on:focus={()=>{stopped=true}}
     on:mouseleave={()=>{stopped=false}} on:blur={()=>{stopped=false}}>
     <div class="relative w-screen h-10">

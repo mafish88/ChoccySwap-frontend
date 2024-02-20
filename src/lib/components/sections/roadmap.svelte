@@ -1,11 +1,20 @@
 <script lang="ts">
-	import Mediaquery from '../atomic/mediaquery.svelte';
+	import Event from "../complex/event.svelte";
+    import { roadmap } from "$lib/data/roadmap";
+	import Openable from "../atomic/openable.svelte";
+
 </script>    
     
-<Mediaquery query="(min-width:700px)" let:matches>
-    <div class="flx w-full mt-[8rem]">
-        <div class="grid mx-2"
-            style="grid-template-columns:repeat({matches? "2" : "1"}, minmax(0, 1fr));">
-        </div>
-    </div>
-</Mediaquery>
+<div class="flx flex-col w-full mt-[8rem] text-gray-0">
+    <h3 class="text-[20pt] mb-8">Roadmap</h3>
+    {#each roadmap as section}
+        <Openable title={section.title} color={section.color}
+            class="border border-2 rounded-xl p-4 m-2 w-[350px]">
+            <div>
+                {#each section.events as event}
+                    <Event {...event} color={section.color}/>
+                {/each}
+            </div>
+        </Openable>
+    {/each}
+</div>

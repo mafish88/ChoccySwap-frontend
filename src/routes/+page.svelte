@@ -16,8 +16,8 @@
 	<Swap/>
 	<!--ValueProp/-->
 	<Features />
-	<Roadmap />
 	<Partners />
+	<Roadmap />
 </section>
 
 <style>
