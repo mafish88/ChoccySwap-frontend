@@ -12,7 +12,9 @@
 </svelte:head>
 
 <section>
-	<Animation class=""/>
+	<div class="w-screen overflow-hidden">
+		<Animation class=""/>
+	</div>
 	<Swap/>
 	<!--ValueProp/-->
 	<Features />
