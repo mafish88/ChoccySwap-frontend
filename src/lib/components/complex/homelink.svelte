@@ -2,7 +2,7 @@
     export let showWriting = true;
 </script>
 
-<a href="/" class="flex">
+<a href="/" class="flex absolute m-4">
     <svg class="h-10 w-10"
         width="108.35928mm"
         height="108.35928mm"

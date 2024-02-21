@@ -14,7 +14,8 @@
     bg-gray-400 top-[2rem] right-0 px-2 py-1 space-y-1 flex justify-center align-end flex-col">
     {#each links as info, i}
         <hr class="hr{i}"/>
-        <a class="text-gray-100 hover:text-gray-0" href={info[1]}>{info[0]}</a>
+        <a class="text-gray-100 hover:text-gray-0" target="_blank"
+            href={info[1]}>{info[0]}</a>
     {/each}
 </div>
 

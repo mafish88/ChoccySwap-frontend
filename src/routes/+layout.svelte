@@ -4,6 +4,7 @@
 	import './styles.css';
 	import type { Snapshot } from './$types';
 	import Navpill from '$lib/components/complex/navpill.svelte';
+	import Footer from '$lib/components/atomic/footer.svelte';
 	
 	let closedWarning = false;
 	let warningHeight = "";
@@ -23,7 +24,7 @@
 		<slot />
 	</main>
 
-	<footer class="bg-pink-800 h-10 mt-auto"></footer>
+	<Footer />
 </div>
 
 <style>
