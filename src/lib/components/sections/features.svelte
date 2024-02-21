@@ -5,12 +5,12 @@
 </script>    
     
 <Mediaquery query="(min-width:700px)" let:matches>
-    <div class="flx w-full mt-[8rem]">
+    <div class="flx mt-[8rem] w-full">
+        <div class="flx rounded-xl box p-4">
         <div class="grid mx-2"
             style="grid-template-columns:repeat({matches? "2" : "1"}, minmax(0, 1fr));">
             {#each feats as feat, i}
-                <Fadingcomponent class="w-[350px] h-full flx p-7 !justify-start
-                    border-gray-400 border" fadedStyle="opacity:0;transform:translateY({
+                <Fadingcomponent class="w-[350px] h-full flx p-7 !justify-start" fadedStyle="opacity:0;transform:translateY({
                         (!matches)||i%2? "100px" : "50px"
                     })">
                     <img style:height={feat.size} class="mr-2" src={feat.url} alt="" />
@@ -26,4 +26,20 @@
             {/each}
         </div>
     </div>
+    </div>
 </Mediaquery>
+
+<style>
+    .box {
+        background-color: var(--gray);
+        background-image: linear-gradient(
+			135deg,
+			rgb(34 34 34 / 0%),
+			rgb(9 25 35 / 60%)
+		), linear-gradient(
+			225deg,
+			rgb(34 34 34 / 0%),
+			#ff9ced55
+		);
+    }
+</style>

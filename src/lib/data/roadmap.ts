@@ -12,19 +12,19 @@ export const roadmap = [
 		events: [
 			{
 				title: 'First version release',
-				description: 'Introduce the application to the world and invite users to experience its capabilities within the confines of a private server environment.'
+				description: 'Introduce the application publicly and invite early adopters to explore and test its features on a private server.'
 			},
 			{
 				title: 'FT4 update',
-				description: 'Enhance the dapp by seamlessly integrating it with the most cutting-edge iteration of the FT protocol, ensuring optimal performance and compatibility with the latest advancements on Chromia.'
+				description: "Improve the dapp experience by integrating it with the newest version of the FT protocol, ensuring performance and compatibility with Chromia's latest advancements."
 			},
 			{
 				title: 'Website and branding update',
-				description: 'Release an updated website with our new branding, setting the stage for the debut of our project on the mainnet.'
+				description: 'Refreshed website with our new branding, setting the stage for the debut of our project on mainnet.'
 			},
 			{
 				title: 'Liquidity deals',
-				description: 'Forge strategic partnerships with key stakeholders across the ecosystem, fostering a harmonious collaboration to infuse liquidity into the swap platform upon its launch, paving the way for a robust exchange from the outset.'
+				description: 'Strategic partnerships and collaborations with important players in the space to boost liquidity for the swap platform at launch, clearing the path for seamless trading.'
 			},
 		],
 	},
@@ -34,19 +34,19 @@ export const roadmap = [
 		events: [
 			{
 				title: 'Orderbook implementation',
-				description: 'Implement an orderbook system seamlessly into the AMM swap platform, enhancing its functionality and providing users with an enhanced way of interacting with asset pairs, empowering them to make precise trades.'
+				description: 'Add an order book to the AMM swap platform to expand its functionality, letting users make precise trades within asset pairs.'
 			},
 			{
 				title: 'Performance test',
-				description: 'Conduct rigorous testing on the orderbook functionality to validate the feasibility of implementing a hybrid model decentralized exchange, blending the best elements of AMM and orderbook trading.'
+				description: 'Thoroughly test the order book feature to confirm the feasibility of a hybrid exchange model, combining the best of automated pools and orderbook trading.'
 			},
 			{
 				title: 'User onboarding',
-				description: 'Launch an engaging and captivating promotional campaign across all of our social media platforms, captivating audiences with compelling content and enticing offers to attract a wave of new users, igniting excitement and fostering community growth within our digital ecosystem.'
+				description: 'Engaging promotional push across our social accounts to capture audiences attention and foster community growth. '
 			},
 			{
 				title: 'Launchpad implementation',
-				description: 'Establish a dynamic launchpad platform within Choccyswap\'s ecosystem, empowering users to effortlessly create tokens and launch ICOs with ease and efficiency.'
+				description: "Build a launchpad on Choccy's platform, allowing developers to launch tokens and initial offerings with simplicity and ease."
 			},
 		],
 	},

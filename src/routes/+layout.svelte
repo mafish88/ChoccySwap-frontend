@@ -28,14 +28,20 @@
 
 <style>
 	.app {
-		background-image: linear-gradient(
-			to bottom right,
+		background-image: repeating-linear-gradient(
+			135deg,
 			rgb(34 34 34 / 0%),
 			rgb(9 25 35 / 50%)
-		), linear-gradient(
-			to bottom left,
+			100vh,
+			rgb(34 34 34 / 0%)
+			200vh
+		), repeating-linear-gradient(
+			225deg,
 			rgb(34 34 34 / 0%),
 			#ff9ced22
+			100vh,
+			rgb(34 34 34 / 0%)
+			200vh
 		), url("$lib/images/bg.png");	
 	}
 </style>
