@@ -10,8 +10,8 @@
 </script>
 
 {#if isA}
-    <a {href} class="{$$restProps.class} flx bg-blue hover:bg-blue-200
-        text-gray rounded-xl px-4 relative"
+    <a {href} class="{tooltip? "relative" : ""} {$$restProps.class} flx bg-blue
+        hover:bg-blue-200 text-gray rounded-xl px-4"
         on:mouseenter={()=>{
             hover="tip";
             clearTimeout(timeout);
@@ -36,8 +36,8 @@
         
     </a>
 {:else}
-    <button on:click={action} class="{$$restProps.class} bg-blue hover:bg-blue-200
-        text-gray rounded-xl px-4 relative"
+    <button on:click={action} class="{tooltip? "relative" : ""} {$$restProps.class} 
+        bg-blue hover:bg-blue-200 text-gray rounded-xl px-4"
         on:mouseenter={()=>{
             hover="tip";
             clearTimeout(timeout);
