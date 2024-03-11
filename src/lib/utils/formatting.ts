@@ -1,4 +1,4 @@
-import type { Amount } from "@chromia/ft4";
+//import type { Amount } from "@chromia/ft4";
 
 function getWithSuffix(integerPart: string, maxLength: number): string {
     const exp = Math.min(
@@ -29,8 +29,7 @@ function getWithSuffix(integerPart: string, maxLength: number): string {
     }
 }
 
-export function sanitizeNumber(num: Amount, maxLength = 7): string {
-    const txt = num.toString();
+export function sanitizeNumber(txt: string, maxLength = 7): string {
     if (txt.length < maxLength) return txt;
     const dotIndex = txt.indexOf(".");
     if (dotIndex === -1 || dotIndex > maxLength) {
@@ -39,6 +38,6 @@ export function sanitizeNumber(num: Amount, maxLength = 7): string {
         return getWithSuffix(integerPart, maxLength)
     } else {
         // dot is found before the max string length
-        return txt.substring(0, maxLength).replace(/[.0]*$/, "") ?? "0";
+        return txt.substring(0, maxLength).replace(/\.?0*$/, "") ?? "0";
     }
 }

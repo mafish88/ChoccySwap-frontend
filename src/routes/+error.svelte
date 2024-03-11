@@ -1,4 +1,4 @@
-<div class="w-full h-full flx flex-col">
+<div class="h-screen flx flex-col">
     <h3 class="text-[30pt]">
         Not found
     </h3>
