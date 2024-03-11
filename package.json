@@ -38,8 +38,6 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@chromia/ft4": "file:../../../../../ExternalJobs/ft3-lib",
-		"ethers": "^6.11.1",
 		"svelte-inview": "^4.0.2"
 	}
 }
