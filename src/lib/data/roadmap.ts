@@ -57,11 +57,11 @@ export const roadmap = [
 			{
 				title: 'Liquidity provision',
 				description:
-					'Ensure the execution of agreements to establish six robust liquidity pools, each meticulously aligned with tokens from key ecosystem players, fortifying the foundation of our platform, and fostering a diverse and resilient trading environment that reflects the collective strength of our ecosystem partners.'
+					'Establishing liquidity pools linked to tokens from key ecosystem players to strengthen the platform\'s foundation and create a diverse trading environment that reflects the collective strength of the Chromia ecosystem.'
 			},
 			{
 				title: 'Subscription model',
-				description: 'Empower users with the flexibility to utilize CCY tokens as a means to access reduced liquidity fees, incentivizing engagement and participation within the platform while promoting the utility and value of the CCY token as a versatile asset within our ecosystem.',
+				description: 'Allowing token holders more flexibility with access to lower trading fees on our platform. By offering lower trading fees to token holders, we aim to incentivize participation and demonstrate the practical utility of the token both for transactions as well as participation in the growing services across our ecosystem. Our aspiration is for CCY to emerge as a valuable digital asset that customers will see long-term value in holding.',
 			},
 		],
 	},
@@ -72,17 +72,17 @@ export const roadmap = [
 			{
 				title: 'Metamask integration',
 				description:
-					'Leverage the power of Metamask Snaps to streamline the user experience, providing seamless integration with the Chromia network and simplifying interactions for users. This innovative approach enhances accessibility and usability, empowering users to effortlessly navigate and engage with the platform, fostering a more intuitive and frictionless experience overall.'
+					'Utilizing Metamask Snaps to simplify the user experience and seamlessly integrate with the Chromia network. This will make it easier for users to navigate and engage with the platform, creating a more intuitive and frictionless experience overall.'
 			},
 			{
 				title: 'Oracles',
 				description:
-					'Integrate robust oracle solutions and price feeds into our system, enabling seamless access to accurate and reliable data for other chains within the Chromia network and beyond. By providing trusted data sources, we strengthen interoperability and facilitate the seamless exchange of information, fostering a more interconnected and resilient ecosystem for all participants.'
+					'Integrating oracle solutions and price feeds to provide accurate and reliable data for other chains within the Chromia network and beyond. This will enhance interoperability and facilitate the exchange of information, creating a more interconnected ecosystem for all participants.'
 			},
 			{
 				title: 'Sharding',
 				description:
-					'Establish a dedicated environment tailored for lower liquidity pairs, providing a specialized space where high-frequency trades involving "memecoins" and similar assets can occur without disrupting the functionality of blue-chip tokens. This segregation ensures optimal performance and stability for all types of assets, fostering a balanced trading ecosystem that accommodates diverse investment strategies and preferences.'
+					'Build a dedicated environment for lower liquidity pairs, allowing high-volatility trades involving "meme" tokens and similar assets without disrupting the functionality of blue-chip tokens. This distinction ensures optimal performance and stability for all types of assets, adhering to diverse investment strategies and preferences.'
 			}
 		]
 		
