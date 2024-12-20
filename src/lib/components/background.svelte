@@ -2,7 +2,7 @@
 </script>
 
 
-<div id="black" class="min-h-screen w-full bg-black">
+<div id="black" class="w-full bg-black h-auto grow flex">
     <span class="c ctopright"></span>
     <span class="c cextleft"></span>
     <span class="c cextmidleft"></span>
@@ -12,8 +12,8 @@
     <span class="c cmidleft"></span>
     <span class="c cmidright"></span>
     <span class="c cbottom"></span> 
-    <div id="container" class="relative allcenter min-h-screen">
-        <div class="max-w-[1200px] z-[2] relative">
+    <div id="container" class="relative allcenter grow">
+        <div class="max-w-[1200px] z-[2] relative allcenter flex-col">
             <slot/> 
         </div>
     </div>

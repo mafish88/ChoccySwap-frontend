@@ -1,4 +1,5 @@
 <script lang="ts">
+    import Background from "$lib/components/background.svelte";
 	import "@fontsource/roboto";
 	import '../app.css';
 	import logo from "$lib/images/logo.svg";
@@ -19,7 +20,7 @@
 	}
 </script>
 
-<div class="overflow-hidden relative bg-black">
+<div class="overflow-hidden relative bg-black min-h-screen flex flex-col justify-between">
 	
 	<div id="positioner" class="absolute w-full z-10">
 		<div id="header" class="allcenter bg-transparent text-white py-3 px-7">
@@ -39,7 +40,7 @@
 						</a>
 					</div>
 					
-					<a href="/" id="swapbutton" class="py-1.5 px-7 font-semibold ml-8">
+					<a href="/swap" id="swapbutton" class="py-1.5 px-7 font-semibold ml-8">
 						Swap Now
 					</a>
 				</div>
@@ -55,7 +56,7 @@
 							Pools
 						</a>
 					
-						<a href="/" id="swapbutton" class="py-1.5 px-7 font-semibold">
+						<a href="/swap" id="swapbutton" class="py-1.5 px-7 font-semibold">
 							Swap Now
 						</a>
 					</div>
@@ -64,11 +65,14 @@
 		</div>
 	</div>
 	
-	
-	{@render children()}
-	
 
 
+	<Background>
+		{@render children()}
+	</Background>
+	
+
+	
 	<div id="footer" class="flex flex-col items-center w-full text-white bg-transparent">
 		<span class="c ctopright"></span>
 		<span class="c ctopleft"></span>
