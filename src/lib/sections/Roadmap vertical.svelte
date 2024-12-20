@@ -1,25 +1,23 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	let parentW: number = $state(0);
+	let scrollPos = $state(0);
 
-	let parentW: number;
-	let scrollPos = 0;
-
-	let completed: HTMLButtonElement,
-		progress: HTMLButtonElement,
-		scheduled: HTMLButtonElement,
-		planned: HTMLButtonElement;
+	let completed: HTMLButtonElement | undefined = $state(),
+		progress: HTMLButtonElement | undefined = $state(),
+		scheduled: HTMLButtonElement | undefined = $state(),
+		planned: HTMLButtonElement | undefined = $state();
 		
-	let cH: number, prH: number, sH: number, plH: number;
+	let cH: number = $state(0), prH: number = $state(0), sH: number = $state(0), plH: number = $state(0);
 
-	onMount(() => {
+	$effect(() => {
 		let selected = 0;
 		const buttons = [completed, progress, scheduled, planned];
 		
 		buttons.forEach((b, i) => {
-			b.addEventListener('click', () => {
-				buttons[selected].classList.remove('selected');
+			b?.addEventListener('click', () => {
+				buttons[selected]?.classList.remove('selected');
 				selected = i;
-				buttons[selected].classList.add('selected');
+				buttons[selected]?.classList.add('selected');
 				const heights = [cH, prH, sH, plH];
 				const offset = heights.reduce((sum, v, idx) => {
 					if (idx < i) return sum + v;

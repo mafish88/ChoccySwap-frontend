@@ -1,28 +1,26 @@
 <script lang="ts">
-	import { onMount } from 'svelte';
+	let completed: HTMLButtonElement | undefined = $state(),
+		progress: HTMLButtonElement | undefined = $state(),
+		scheduled: HTMLButtonElement | undefined = $state(),
+		planned: HTMLButtonElement | undefined = $state();
+	let scroller: HTMLDivElement | undefined = $state();
+	let cW: number = $state(0), prW: number = $state(0), sW: number = $state(0), plW: number = $state(0);
 
-	let completed: HTMLButtonElement,
-		progress: HTMLButtonElement,
-		scheduled: HTMLButtonElement,
-		planned: HTMLButtonElement;
-	let scroller: HTMLDivElement;
-	let cW: number, prW: number, sW: number, plW: number;
-
-	onMount(() => {
+	$effect(() => {
 		let selected = 0;
 		const buttons = [completed, progress, scheduled, planned];
 		
 		buttons.forEach((b, i) => {
-			b.addEventListener('click', () => {
-				buttons[selected].classList.remove('selected');
+			b?.addEventListener('click', () => {
+				buttons[selected]?.classList.remove('selected');
 				selected = i;
-				buttons[selected].classList.add('selected');
+				buttons[selected]?.classList.add('selected');
 				const widths = [cW, prW, sW, plW];
 				const offset = widths.reduce((sum, v, idx) => {
 					if (idx < i) return sum + v;
 					return sum
 				}, 0)
-				scroller.scrollTo({
+				scroller?.scrollTo({
 					left: offset,
 					behavior: 'smooth'
 				});

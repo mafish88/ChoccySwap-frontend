@@ -3,6 +3,9 @@
     import cwlogo from "$lib/images/cwlogo.svelte"
     import cwtext from "$lib/images/cwtext.svelte"
     import chromia from "$lib/images/logo-chromia.svg"
+
+    const SvelteComponent = $derived(cwlogo);
+    const SvelteComponent_1 = $derived(cwtext);
 </script>
 
 <div id="Partners" class="allcenter flex-col mt-[100px]">
@@ -12,8 +15,8 @@
     <div class="allcenter min-[707px]:space-x-10 max-[706px]:flex-col">
         <img src={mna} class="w-[150px]" alt="my neighbor alice logo">
         <div class="cw flex">
-            <svelte:component this={cwlogo}/>
-            <svelte:component this={cwtext}/>
+            <SvelteComponent/>
+            <SvelteComponent_1/>
         </div>  
         <img src={chromia} class="w-[150px]" alt="chromia logo">
     </div>

@@ -1,4 +1,9 @@
 <script lang="ts">
+    interface Props {
+        children?: import('svelte').Snippet;
+    }
+
+    let { children }: Props = $props();
 </script>
 
 
@@ -14,7 +19,7 @@
     <span class="c cbottom"></span> 
     <div id="container" class="relative allcenter grow">
         <div class="max-w-[1200px] z-[2] relative allcenter flex-col">
-            <slot/> 
+            {@render children?.()} 
         </div>
     </div>
 </div>
