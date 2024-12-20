@@ -4,12 +4,15 @@
 		scheduled: HTMLButtonElement | undefined = $state(),
 		planned: HTMLButtonElement | undefined = $state();
 	let scroller: HTMLDivElement | undefined = $state();
-	let cW: number = $state(0), prW: number = $state(0), sW: number = $state(0), plW: number = $state(0);
+	let cW: number = $state(0),
+		prW: number = $state(0),
+		sW: number = $state(0),
+		plW: number = $state(0);
 
 	$effect(() => {
 		let selected = 0;
 		const buttons = [completed, progress, scheduled, planned];
-		
+
 		buttons.forEach((b, i) => {
 			b?.addEventListener('click', () => {
 				buttons[selected]?.classList.remove('selected');
@@ -18,8 +21,8 @@
 				const widths = [cW, prW, sW, plW];
 				const offset = widths.reduce((sum, v, idx) => {
 					if (idx < i) return sum + v;
-					return sum
-				}, 0)
+					return sum;
+				}, 0);
 				scroller?.scrollTo({
 					left: offset,
 					behavior: 'smooth'
@@ -47,7 +50,7 @@
 							features on a private server.
 						</p>
 					</span>
-	
+
 					<span class="floating-span left-1/4 w-1/4" style:--offset="0.5cm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">FT4 update</h3>
 						<p class="text-sm opacity-70">
@@ -55,15 +58,15 @@
 							ensuring performance and compatibility with Chromia's latest advancements.
 						</p>
 					</span>
-	
+
 					<span class="floating-span left-1/2 w-1/4" style:--offset="2.8cm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Website & branding update</h3>
 						<p class="text-sm opacity-70">
-							Refreshed website with our new branding, setting the stage for the debut of our project
-							on mainnet.
+							Refreshed website with our new branding, setting the stage for the debut of our
+							project on mainnet.
 						</p>
 					</span>
-	
+
 					<span class="floating-span left-3/4 w-1/4" style:--offset="0.2cm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Liquidity Deals</h3>
 						<p class="text-sm opacity-70">
@@ -83,7 +86,7 @@
 							make precise trades within asset pairs.
 						</p>
 					</span>
-	
+
 					<span class="floating-span left-1/4 w-1/4" style:--offset="3cm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Performance test</h3>
 						<p class="text-sm opacity-70">
@@ -91,15 +94,15 @@
 							model, combining the best of automated pools and orderbook trading.
 						</p>
 					</span>
-	
+
 					<span class="floating-span left-1/2 w-1/4" style:--offset="0.6cm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">User onboarding</h3>
 						<p class="text-sm opacity-70">
-							Engaging promotional push across our social accounts to capture audiences attention and
-							foster community growth.
+							Engaging promotional push across our social accounts to capture audiences attention
+							and foster community growth.
 						</p>
 					</span>
-	
+
 					<span class="floating-span left-3/4 w-1/4" style:--offset="0.6cm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Launchpad implementation</h3>
 						<p class="text-sm opacity-70">
@@ -120,16 +123,16 @@
 							collective strength of the Chromia ecosystem.
 						</p>
 					</span>
-	
+
 					<span class="floating-span left-1/2 w-1/2" style:--offset="3.4cm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Subscription model</h3>
 						<p class="text-sm opacity-70">
 							Allowing token holders more flexibility with access to lower trading fees on our
 							platform. By offering lower trading fees to token holders, we aim to incentivize
-							participation and demonstrate the pratical utility of the token both for transactions as
-							well as participation in the growing services across our ecosystem. Our aspiration is
-							for CCY to emerge as a valuable digital asset that customers will see long-term value in
-							holding.
+							participation and demonstrate the pratical utility of the token both for transactions
+							as well as participation in the growing services across our ecosystem. Our aspiration
+							is for CCY to emerge as a valuable digital asset that customers will see long-term
+							value in holding.
 						</p>
 					</span>
 				</div>
@@ -141,28 +144,28 @@
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Metamask integration</h3>
 						<p class="text-sm opacity-70">
 							Utilizing Metamask Snaps to simplify the user experience and seamlessly integrate with
-							the Chromia network. This will make it easier for users to navigate and engage with the
-							platform, creating a more intuitive and frictionless experience overall.
+							the Chromia network. This will make it easier for users to navigate and engage with
+							the platform, creating a more intuitive and frictionless experience overall.
 						</p>
 					</span>
-	
+
 					<span class="floating-span left-1/3 w-1/3" style:--offset="2.8cm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Oracles</h3>
 						<p class="text-sm opacity-70">
 							Integrating oracle solutions and price feeds to provide accurate and reliable data for
 							other chains within the Chromia network and beyond. This will enhance interoperability
-							and facilitate the exchange of information, creating a more interconnected ecosystem for
-							all participants.
+							and facilitate the exchange of information, creating a more interconnected ecosystem
+							for all participants.
 						</p>
 					</span>
-	
+
 					<span class="floating-span left-2/3 w-1/3" style:--offset="0cm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Sharding</h3>
 						<p class="text-sm opacity-70">
-							Build a dedicated environment for lower liquidity pairs, allowing high-volatility trades
-							involving "meme" tokens and similar assets without disrupting the functionality of
-							blue-chip tokens. This distinction ensures optimal performance and stability for all
-							types of assets, adhering to diverse investment strategies and preferences.
+							Build a dedicated environment for lower liquidity pairs, allowing high-volatility
+							trades involving "meme" tokens and similar assets without disrupting the functionality
+							of blue-chip tokens. This distinction ensures optimal performance and stability for
+							all types of assets, adhering to diverse investment strategies and preferences.
 						</p>
 					</span>
 				</div>
@@ -190,12 +193,12 @@
 		width: 130cm;
 		background-repeat: repeat-x;
 		background-position-y: bottom;
-		&>div {
+		& > div {
 			display: flex;
 			width: 100%;
 			max-width: 1200px;
 			padding: 0 5rem;
-			&>div {
+			& > div {
 				width: 100%;
 				position: relative;
 			}

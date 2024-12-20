@@ -17,8 +17,8 @@
     <span class="c cmidleft"></span>
     <span class="c cmidright"></span>
     <span class="c cbottom"></span> 
-    <div id="container" class="relative allcenter grow">
-        <div class="max-w-[1200px] z-[2] relative allcenter flex-col">
+    <div id="container" class="allcenter grow">
+        <div class="max-w-[1200px] z-[2] allcenter flex-col">
             {@render children?.()} 
         </div>
     </div>
