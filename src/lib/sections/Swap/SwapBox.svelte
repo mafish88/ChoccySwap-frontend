@@ -2,32 +2,34 @@
 	import Swapinput from '$lib/components/swapinput.svelte';
 import cog from '$lib/images/cog.svg';
 	import switcharrow from '$lib/images/switch.svg';
+
+	let { openTokens, openSettings, token1, token2, switchTokens } = $props();
 </script>
 
 <div
 	id="mainbox"
-	class="allcenter flex-col w-[15cm] border border-gray-600 rounded-3xl my-[3cm] py-5 text-white"
+	class="allcenter flex-col min-w-[600px]:w-[600px] mx-2 border border-gray-600 rounded-3xl my-[3cm] py-5 text-white"
 >
 	<div class="allcenter !justify-between w-full px-6">
 		<h1 class="text-3xl font-extrabold">Swap</h1>
-		<button class="w-[30px]"> <img src={cog} alt="slippage menu" /></button>
+		<button onclick={openSettings} class="w-[30px]"> <img src={cog} alt="slippage menu" /></button>
 	</div>
 
 	<div class="allcenter relative flex-col w-full px-4 mt-4">
-		<Swapinput isInput={true} token="eth"/>
+		<Swapinput {openTokens} isInput={true} {...token1}/>
 		
         
         <div
 			id="switch-background"
 			class="absolute allcenter bg-[#303030] w-[2cm] h-[2cm] rounded-full border-[#682c5a] border-2"
 		>
-			<button class="bg-[#101010] w-[1.5cm] h-[1.5cm] rounded-full">
+			<button onclick={switchTokens} class="bg-[#101010] w-[1.5cm] h-[1.5cm] rounded-full">
 				<img src={switcharrow} alt="switch" />
 			</button>
 		</div>
 		
 		
-        <Swapinput isInput={false}/>
+        <Swapinput {openTokens} isInput={false} {...token2}/>
 	</div>
 
 	<div class="allcenter w-full px-4 mt-3">

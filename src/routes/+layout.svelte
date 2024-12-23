@@ -31,7 +31,7 @@
 					<img src={logo} alt="logo" class="h-[50px]" />
 					<img src={writing} alt="choccyswap" class="h-[30px] px-3" />
 				</a>
-				<div class="max-[549px]:hidden allcenter ml-auto">
+				<div class="max-[599px]:hidden allcenter ml-auto">
 					<div id="links" class="allcenter ml-auto space-x-8 font-medium">
 						<a href="/" class=""> Stats </a>
 						<a href="/" class=""> Pools </a>
@@ -43,24 +43,26 @@
 					{/if}
 				</div>
 
-				<button onclick={toggleMenu} class="min-[550px]:hidden ml-auto relative">
-					<img src={menu} alt="menu" class="text-white" />
-
+				<div class="min-[600px]:hidden ml-auto relative">
+					<button onclick={toggleMenu}>
+						<img src={menu} alt="menu" class="text-white" />
+					</button>
+					
 					<div
 						bind:this={menuDiv}
 						id="topbarmenu"
-						class="min-[550px]:hidden absolute top-full right-0 p-3 gap-3 w-[500%]"
+						class="min-[600px]:!hidden absolute top-full right-0 p-3 gap-3 w-[500%]"
 					>
 						<a href="/" class=""> Stats </a>
 						<a href="/" class=""> Pools </a>
-
+	
 						{#if isSwap}
 							<button id="swapbutton" class="py-1.5 px-7 font-semibold"> Connect Wallet </button>
 						{:else}
 							<a href="/swap" id="swapbutton" class="py-1.5 px-7 font-semibold"> Swap Now </a>
 						{/if}
 					</div>
-				</button>
+				</div>
 			</div>
 		</div>
 	</div>

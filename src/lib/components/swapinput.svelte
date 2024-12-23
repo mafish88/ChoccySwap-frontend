@@ -1,8 +1,7 @@
-<script>
-	import eth from '$lib/images/eth.svg';
+<script lang="ts">
 	import arrow from '$lib/images/arrow.svg';
 
-	let { isInput, token = undefined } = $props();
+	let { isInput, openTokens, asset, amountToExchange, amountOwned } = $props();
 </script>
 
 <div
@@ -12,22 +11,22 @@
 		<span class="font-bold pl-3">
 			{isInput ? 'You Pay' : 'You Receive'}
 		</span>
-		<button
+		<button onclick={openTokens}
 			class="allcenter bg-[#101010] rounded-full mt-1 py-2 px-3 font-bold border border-gray-600"
 		>
-			{#if token !== undefined}
-				<img src={eth} alt="token image" class="w-[32px] h-[32px] ml-1 mr-2" />
-				ETH
+			{#if asset !== undefined}
+				<img src={asset.iconUrl} alt="token" class="max-w-[32px] max-h-[32px] ml-1 mr-2" />
+				{asset.symbol}
 			{:else}
 				Choose Token
 			{/if}
 			<img src={arrow} alt="choose token" class="w-[30px] h-[30px]" />
 		</button>
-		<span class="text-sm opacity-50 mt-1 pl-3">Balance: 1.02</span>
+		<span class="text-sm opacity-50 mt-1 pl-3">Balance: {amountOwned}</span>
 	</div>
 	<div class="flex flex-col items-end flex-[1_1_50%]">
-		<input type="text" placeholder="0.00" />
-		<span class="text-sm opacity-50">$1</span>
+		<input type="text" placeholder="0.00" value={amountToExchange}/>
+		<span class="text-sm opacity-50">${amountToExchange}</span>
 	</div>
 </div>
 
