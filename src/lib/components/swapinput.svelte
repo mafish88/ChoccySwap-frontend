@@ -15,7 +15,7 @@
 			class="allcenter bg-[#101010] rounded-full mt-1 py-2 px-3 font-bold border border-gray-600"
 		>
 			{#if asset !== undefined}
-				<img src={asset.iconUrl} alt="token" class="max-w-[32px] max-h-[32px] ml-1 mr-2" />
+				<img src={asset.iconUrl} alt="token logo" class="max-w-[32px] max-h-[32px] ml-1 mr-2" />
 				{asset.symbol}
 			{:else}
 				Choose Token
