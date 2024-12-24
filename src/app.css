@@ -1,0 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+.allcenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header-content #topbarmenu.open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
