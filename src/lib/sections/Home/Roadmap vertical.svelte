@@ -171,9 +171,8 @@
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Sharding</h3>
 						<p class="text-sm opacity-70">
 							Build a dedicated environment for lower liquidity pairs, allowing high-volatility trades
-							involving "meme" tokens and similar assets without disrupting the functionality of
-							blue-chip tokens. This distinction ensures optimal performance and stability for all
-							types of assets, adhering to diverse investment strategies and preferences.
+							involving "meme" tokens without disrupting the functionality of blue-chip tokens.
+							This distinction ensures optimal performance and stability for all assets, adhering to diverse investment strategies and preferences.
 						</p>
 					</span>
 				</div>
