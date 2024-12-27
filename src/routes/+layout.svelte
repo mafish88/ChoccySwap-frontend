@@ -5,12 +5,11 @@
 	import { page } from '$app/state';
 	import Footer from '$lib/components/footer.svelte';
 	import Header from '$lib/components/header.svelte';
-	import { onMount } from 'svelte';
 
 	let { children } = $props();
 
 	let isSwap = $derived(page.url.pathname.match(/swap/i) !== null);
-
+/*
 	let target = new Date("2024-12-27T12:00:00Z")
 	let time = $state(target.valueOf() - new Date().valueOf())
 
@@ -44,11 +43,11 @@
 		return () => {
 			clearInterval(interval);
 		};
-	});
+	});*/
 </script>
 
 <div class="overflow-hidden relative bg-black min-h-screen flex flex-col justify-between">
-	<!--Header {isSwap} />
+	<Header {isSwap} />
 
 	<Background>
 		{@render children()}
@@ -56,31 +55,5 @@
 
 	{#if !isSwap}
 		<Footer/>
-	{/if}-->
-	<p class="allcenter">{timeDiff.hours}:{timeDiff.minutes}:{timeDiff.seconds}</p>
-	<p class="allcenter">Phase 0/4</p>
+	{/if}
 </div>
-
-<style>
-	div {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-	}
-	p {
-		color: #b5178e;
-		font-weight: 900;
-		font-size: 90pt;
-	}
-	@media(max-width: 520px) {
-		p {
-			font-size: 50pt !important;
-		}
-	}
-	@media(max-width: 780px) {
-		p {
-			font-size: 70pt;
-		}
-	}
-</style>
