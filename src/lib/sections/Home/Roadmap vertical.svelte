@@ -1,6 +1,4 @@
 <script lang="ts">
-	import { onMount } from "svelte";
-
 	let parentW: number = $state(0);
 	let scrollPos = $state(0);
 
