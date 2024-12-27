@@ -43,7 +43,7 @@
 		<button bind:this={planned} class="roadmap-buttons"> Planned </button>
 	</div>
 	
-	<div id="scrollbox" class="mt-4 w-screen max-h-[20cm] relative overflow-clip">
+	<div id="scrollbox" class="mt-4 w-screen h-[22cm] relative overflow-clip">
 		<div style:top="{scrollPos}px" bind:clientWidth={parentW} id="alltasks"
 			style:--parentW="{parentW}px" style:--bg-offset="2cm"
 			class="relative flex flex-col items-start pt-6">
@@ -57,7 +57,7 @@
 						</p>
 					</span>
 	
-					<span class="floating-span top-1/4 w-1/2" style:--offset="49mm">
+					<span class="floating-span top-1/4 w-1/2" style:--offset="53mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">FT4 update</h3>
 						<p class="text-sm opacity-70">
 							Improve the dapp experience by integrating it with the newest version of FT protocol,
@@ -65,7 +65,7 @@
 						</p>
 					</span>
 	
-					<span class="floating-span top-1/2 w-1/2" style:--offset="37mm">
+					<span class="floating-span top-1/2 w-1/2" style:--offset="31mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Website & branding update</h3>
 						<p class="text-sm opacity-70">
 							Refreshed website with our new branding, setting the stage for the debut of our project
@@ -73,7 +73,7 @@
 						</p>
 					</span>
 	
-					<span class="floating-span top-3/4 w-1/2" style:--offset="22mm">
+					<span class="floating-span top-3/4 w-1/2" style:--offset="25mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Liquidity Deals</h3>
 						<p class="text-sm opacity-70">
 							Strategic partnerships and collaborations with important players in the space to boost
@@ -85,7 +85,7 @@
 
 			<div bind:clientHeight={prH} id="in-progress">
 				<div>
-					<span class="floating-span top-0 w-1/2" style:--offset="41mm">
+					<span class="floating-span top-0 w-1/2" style:--offset="49mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Orderbook implementation</h3>
 						<p class="text-sm opacity-70">
 							Add an orderbook to the AMM swap platform to expand its functionality, letting users
@@ -93,7 +93,7 @@
 						</p>
 					</span>
 	
-					<span class="floating-span top-1/4 w-1/2" style:--offset="50mm">
+					<span class="floating-span top-1/4 w-1/2" style:--offset="42mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Performance test</h3>
 						<p class="text-sm opacity-70">
 							Thoroughly test the orderbook feature to confirm the feasibility of a hybrid exchange
@@ -101,7 +101,7 @@
 						</p>
 					</span>
 	
-					<span class="floating-span top-1/2 w-1/2" style:--offset="28mm">
+					<span class="floating-span top-1/2 w-1/2" style:--offset="18mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">User onboarding</h3>
 						<p class="text-sm opacity-70">
 							Engaging promotional push across our social accounts to capture audiences attention and
@@ -109,7 +109,7 @@
 						</p>
 					</span>
 	
-					<span class="floating-span top-3/4 w-1/2" style:--offset="15mm">
+					<span class="floating-span top-3/4 w-1/2" style:--offset="16mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Launchpad implementation</h3>
 						<p class="text-sm opacity-70">
 							Build a launchpad on Choccy's platform, allowing developers to launch tokens, projects
@@ -121,7 +121,7 @@
 
 			<div bind:clientHeight={sH} id="scheduled">
 				<div>
-					<span class="floating-span top-0 w-1/2" style:--offset="18mm">
+					<span class="floating-span top-0 w-1/2" style:--offset="31mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Liquidity provision</h3>
 						<p class="text-sm opacity-70">
 							Establishing liquidity pools linked to tokens from key ecosystem players to strenghten
@@ -130,7 +130,7 @@
 						</p>
 					</span>
 	
-					<span class="floating-span top-1/2 w-1/2" style:--offset="52mm">
+					<span class="floating-span top-1/2 w-1/2" style:--offset="38mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Subscription model</h3>
 						<p class="text-sm opacity-70">
 							Allowing token holders more flexibility with access to lower trading fees on our
@@ -146,7 +146,7 @@
 
 			<div bind:clientHeight={plH} id="planned">
 				<div>
-					<span class="floating-span top-0 w-1/2" style:--offset="22mm">
+					<span class="floating-span top-0 w-1/2" style:--offset="45mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Metamask integration</h3>
 						<p class="text-sm opacity-70">
 							Utilizing Metamask Snaps to simplify the user experience and seamlessly integrate with
@@ -155,7 +155,7 @@
 						</p>
 					</span>
 	
-					<span class="floating-span top-1/3 w-1/2" style:--offset="48mm">
+					<span class="floating-span top-1/3 w-1/2" style:--offset="38mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Oracles</h3>
 						<p class="text-sm opacity-70">
 							Integrating oracle solutions and price feeds to provide accurate and reliable data for
@@ -165,13 +165,12 @@
 						</p>
 					</span>
 	
-					<span class="floating-span top-2/3 w-1/2" style:--offset="38mm">
+					<span class="floating-span top-2/3 w-1/2" style:--offset="16mm">
 						<h3 class="text-xl font-extrabold text-[#ED32BF]">Sharding</h3>
 						<p class="text-sm opacity-70">
 							Build a dedicated environment for lower liquidity pairs, allowing high-volatility trades
-							involving "meme" tokens and similar assets without disrupting the functionality of
-							blue-chip tokens. This distinction ensures optimal performance and stability for all
-							types of assets, adhering to diverse investment strategies and preferences.
+							involving "meme" tokens without disrupting the functionality of blue-chip tokens.
+							This distinction ensures optimal performance and stability for all assets, adhering to diverse investment strategies and preferences.
 						</p>
 					</span>
 				</div>
@@ -217,7 +216,7 @@
 	}
 	#alltasks {
 		background-image: url('$lib/images/Roadmap vert.svg');
-		height: 80cm;
+		height: 88cm;
 		padding-bottom: 2cm;
 		width: 100%;
 		background-repeat: repeat-y;
@@ -226,10 +225,10 @@
 		&>div {
 			display: flex;
 			width: 100%;
-			height: 20cm;
+			height: 22cm;
 			&>div {
 				width: 100%;
-				height: 20cm;
+				height: 22cm;
 				position: relative;
 			}
 		}
